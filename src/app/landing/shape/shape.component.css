@@ -1,0 +1,22 @@
+.floatLeft {
+    left: 0;
+}
+
+.floatRight {
+    right: 0;
+}
+
+.general {
+    position: absolute;
+    z-index: 0;
+}
+
+.Onlyborder {
+    border-style: solid;
+    border-color: black;
+    border-width: 30px;
+}
+
+.ok {
+    background-color: black;
+}

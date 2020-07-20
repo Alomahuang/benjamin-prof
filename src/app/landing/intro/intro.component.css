@@ -1,0 +1,69 @@
+.main {
+    overflow: hidden;
+    position: relative;
+    background: rgb(255,96,96);
+    background: linear-gradient(166deg, rgba(255,96,96,1) 42%, rgba(215,72,72,1) 100%);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.imgDiv{
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 300px;
+}
+
+.generalRow{
+    margin: 40px 0;
+}
+
+.underline {
+    padding: 5px 10px;
+    margin: auto;
+    background-image: linear-gradient(120deg, rgba(255,96,96,1) 42%, rgb(247, 132, 38) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.3s ease-out;
+}
+.underline:hover{
+    background-size: 100% 88%;
+}
+.generalRow p{
+    font-size: 1.2em;
+}
+
+.title {
+    padding-top: 20px;
+    padding-left: 10%;
+    display: block;
+    float: left;
+    color: white;
+}
+
+.titleFrench{
+    font-size: 6em;
+    line-height: 1.0;
+}
+
+.titleOther{
+    font-size: 3em;
+    line-height: 1.0;
+}
+
+.titleLife{
+    font-size: 6em;
+    line-height: 1.0;
+    text-decoration: underline;
+}
+
+.card1 {
+    background-color: grey;
+}
+
+@media only screen and (max-width: 950) {
+    .introduction {
+      margin:20px;
+    }
+  }
