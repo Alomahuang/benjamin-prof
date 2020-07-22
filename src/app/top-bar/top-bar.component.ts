@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-top-bar',
@@ -7,19 +8,30 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
   scrolled: boolean;
-  constructor() { }
+  isLanding: boolean;
+  location: string;
+  hideNavInt : boolean;
+  constructor(location: Location) {
+    this.location = location.path();
+  }
 
   ngOnInit() {
+    if (this.location.indexOf('introduction')>0){
+      this.hideNavInt = true;
+    } else {
+      this.hideNavInt = false;
+      this.scrolled = true; 
+    }
   }
   
   @HostListener("window:scroll", [])
   onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number > 100) {
-      console.log('You are 100px from the top to bottom');
+    if (number >= 1) {
+      this.scrolled=true;
+    } else if( !this.hideNavInt ){
       this.scrolled=true;
     } else {
-      console.log('noemal');
       this.scrolled=false;
     }
 
