@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
  */
 
-
   p {
     line-height: 1.5;
     margin: 30px 0;
@@ -20,13 +19,14 @@
   h4,
   h5,
   h6 {
-    font-weight: 800;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: brown;
+    font-weight: 600;
+    font-family: 'monospace', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #ff2300;
   }
 
-  h1 a {
-    color: rgb(37, 75, 241);
+  h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
   }
   
   a {
@@ -409,6 +409,7 @@
   }
   
   .postWrapper{
+      margin-top:10px;
       padding: 50px;
       font-size: 20px;
       color: #212529;

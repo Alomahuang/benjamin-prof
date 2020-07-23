@@ -1,6 +1,3 @@
-
-___
-
 ##  [French Class](/post/class1)
 ###### General french class for foreigners
 <br>
@@ -12,5 +9,3 @@ ___
 ##  [Writing Class](/post/class3)
 ###### This class is for someone with advanced French, at least B1.
 
-
----
