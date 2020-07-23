@@ -18,6 +18,7 @@ export class TopBarComponent implements OnInit {
   ngOnInit() {
     if (this.location.indexOf('introduction')>0){
       this.hideNavInt = true;
+      this.scrolled = false; 
     } else {
       this.hideNavInt = false;
       this.scrolled = true; 
