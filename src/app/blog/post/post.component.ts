@@ -17,9 +17,10 @@ export class PostComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe((params) => {
       //dev
-      //this.post = './assets/blog/post/' +  params['postId'] + '.md';
+      console.log(params);
+      this.post = './assets/blog/post/' +  params['postId'] + '.md';
       //prod
-      this.post ='https://raw.githubusercontent.com/Alomahuang/benjamin-prof/master/docs/assets/blog/' + params['postId'] + '.md';
+      //this.post ='https://raw.githubusercontent.com/Alomahuang/benjamin-prof/master/docs/assets/blog/' + params['postId'] + '.md';
     });
   }
 
