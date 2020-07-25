@@ -1,20 +1,19 @@
 ---
-# Price
+# Course Pricing.
 
 ---
 
-## **Course Pricing.**
-
-Individual course pricing: 900 NTD / hour\* :
+## Individual course 
+price: **900 NTD / hour** 
 
 - From beginners to advance level.
 - Suitable for all ages (from toddlers to adult)
 - DELF / DALF preparation class.
 - For all type of learning (Fun, travel, school, business)
 
-\*Possibility to share the fees with relatives : extra charge of 150NTD for each additional student, (Max 4 peoples.)
+*Possibility to share the fees with relatives : extra charge of 150NTD for each additional student, (Max 4 peoples.)*
 
-Week-end group course pricing (4-6 people) :
+## Week-end group course(4-6 people)
 
 **French for travel program : 8 hours totally – 3200 ntd (400NTD/hour)**
 
@@ -41,7 +40,7 @@ Week-end group course pricing (4-6 people) :
 - First approach of the French language for toddlers
 - 10 \* 45 minutes + 30 minutes French snacks the last class.
 
-Extra service :
+## Extra service 
 
 Official documents, cover letter / application for French university, text correction, etc… - Price depending on the task.
 

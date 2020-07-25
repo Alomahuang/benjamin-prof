@@ -8,20 +8,20 @@ import { ShapeComponent} from '../shape/shape.component';
 })
 export class IntroComponent implements OnInit {
   color = this.getRandomColor();
-  test ={};
   word ={};
-  ob = ['Shopping','Class','Life'];
+  ob = ['Fun', 'Study', 'Work' ,'Me','You', 'Us', 'Life'];
   idx = 0;
   n = 0;
   write = true;
   wordCurrrent = this.ob[this.idx];
   ln = this.wordCurrrent.length;
   hideL=true;
+  delay = 0;
 
   constructor() { }
 
   ngOnInit() {
-    this.typeEffect();
+    this.internalInitiate();
     
   }
   
@@ -33,31 +33,42 @@ export class IntroComponent implements OnInit {
       return color;
   }
 
-  typeEffect(){
+  internalInitiate(){
     setInterval(() => 
-    this.a(),
-    200);
+    this.typeEffect(),
+    150);
     setInterval(() => 
     this.hideL=!this.hideL,
     600);
   }
 
-  a(){
+  typeEffect(){
     this.wordCurrrent = this.ob[this.idx];
+    this.ln = this.wordCurrrent.length;
+    if (this.delay) {
+      this.delay--;
+      return
+    }
     if(this.write){
-      this.test = this.wordCurrrent.slice(0,this.n);
+      this.word = this.wordCurrrent.slice(0,this.n);
       this.n++
     };
-    if(this.n===this.ln+1){this.write=false};
     if(!this.write){
-      this.test = this.wordCurrrent.slice(0,this.n);
+      this.word = this.wordCurrrent.slice(0,this.n);
       this.n--
     }
+    if(this.n===this.ln+1 && this.idx===this.ob.length-1){
+      this.delay=20;
+      this.write=false;
+    } else if (this.n===this.ln+1){
+      this.write=false;
+      this.delay=4;
+    };
     if(this.n===0){
       this.write=true
       this.idx++
     }
-    if(this.idx===this.ob.length){
+    if(this.idx===this.ob.length){ 
       this.idx=0;
     }
   }

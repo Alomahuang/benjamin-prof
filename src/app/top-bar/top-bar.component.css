@@ -12,3 +12,7 @@
 .bg{
     background-color:transparent;
 }
+
+.item-text a{
+    color: rgb(255, 209, 209)!important;
+}

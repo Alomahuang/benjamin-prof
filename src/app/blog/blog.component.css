@@ -16,11 +16,10 @@ h6 {
 
 h2 a {
    color: #ff4242;
-   text-decoration-line: underline;
 }
 
 h6 {
-    color: black;
+    color: rgb(63, 63, 63);
     font-weight: 400;
 }
 
@@ -39,7 +38,7 @@ p {
 height: 8px;
 margin: 0;
 flex-grow: 1;
-transition: all .6s ease-in-out;
+transition: all 1s ease-in-out;
 cursor: pointer;
 }
 
@@ -48,25 +47,14 @@ flex-grow: 12;
 }
 
 .red {
-background-color: #FF5852;
+background-color: rgb(255, 61, 55);
 }
 
-.orange {
-background-color: #FF9000;
-}
-
-.yellow {
-background-color: #FFD300;
-}
-
-.green {
-background-color: #3DCD49;
+.white {
+background-color: rgb(236, 236, 236);
 }
 
 .blue {
-background-color: #0089D7;
+background-color: rgb(52, 83, 255);
 }
 
-.purple {
-background-color: #9E44C4;
-}
